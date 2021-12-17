@@ -23,18 +23,42 @@
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="pro1">
+  <meta name="apple-mobile-web-app-title" content="firebase">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <title>pro1</title>
+  <title>firebase</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyBAE-IXs8k5dNFb6OX87BCtrjBdSUaWfMQ",
+      authDomain: "temp-17883.firebaseapp.com",
+      projectId: "temp-17883",
+      storageBucket: "temp-17883.appspot.com",
+      messagingSenderId: "590168233716",
+      appId: "1:590168233716:web:6408c158e34f8a8b0870a1",
+      measurementId: "G-T4G9E49GQB"
+    };
+  
+    // Initialize Firebase
+     firebase.initializeApp(firebaseConfig);
+     
+    // const analytics = getAnalytics(app);
+        </script>
+
+
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    var serviceWorkerVersion = '821519230';
+
+ 
+ <script>
+    var serviceWorkerVersion = '873043720';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -97,5 +121,6 @@
       loadMainDartJs();
     }
   </script>
+
 </body>
 </html>
